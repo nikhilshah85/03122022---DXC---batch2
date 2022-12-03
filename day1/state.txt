@@ -1,0 +1,5 @@
+ViewBag - this is a dynamic and does an implicity conversion
+	(not so strongly type) - light weight and fast
+ViewData - this is strongly typed
+	use this when you want to be sure about the datatype
+TempData - for cross controller data passing (session object)

@@ -1,0 +1,110 @@
+
+ASP.Net Core - MVC 
+	EF Core 
+	Identity Framework
+	Consume WebAPI 
+WebAPI
+	Consume WebAPI (shared by clients, other teams)
+	Create a WebAPI
+
+----
+	Deploy the app on Azure cloud
+
+	Goals
+	Be a part of new project
+	Maintain an existing project
+
+---------------------------------------------------------------------------------------------
+
+
+			.Net Framework - this is not suitable for startups (cost)
+					 this is costly even for existing org
+
+			1. Cost
+				Visual Studio - Licence - 60000 per user (20) - 12,00,000
+				Windows / Mac - Licence - 10,000 per use (20) -  2,00,000
+				Windows Server- Licence - 3,00,000 per server - 3,00,0000
+									-------------------
+									15X
+			2. Features
+				.net framework - was a server centeric applications
+				against - Client centeric app
+				Advance features, DI, oAuth, CORS, REST Principles
+			3. Cloud (AWS, Azure, GCP etc..) they offer more than 200+ services
+				this service are running on linux platform 
+			
+		--------------------------------------------------------------------------------
+			Angular, React, Node - completely free to develop and host
+
+
+			Thus they came up with similar technologies
+			(Develop Anywhere, use Anywhere)  - .Net Core (Completely re-written framework)
+			
+			Also gave us VS Code - light weight, free, cross platform
+				.Net core comes with CLI - Command Line Interface
+					Same and standard accross all the OS
+
+----------------------------------------------------------------------------------------------
+			
+
+					MVC 
+
+				Model(.cs) --> Data
+					CRUD, sorting, filter, calculation, validation
+					Collections and EFCore with SQL Server
+					WebAPI calls (server side)
+				View(.cshtml) --> UI
+					HTML, CSS and JS - images, videos, advt etc.....
+					Juery, Bootstrap, angular, react
+					WebAPI calls (client side)
+					Client side validation
+					Razor Syntax (short hand HTML+JS+CSS)
+				Controller(.cs) --> Communication
+					listen to reuest from webserver
+					collect data from model pass to view, return view
+					collect data from view pass to model, return view
+						Authentication
+						Caching, Statemanagement etc...
+
+----------------------------------------------------------------------------------------------
+
+dotnet --version
+dotnet new mvc --name firstMVC
+cd firstMVC
+dotnet build
+dotnet run
+-------------------------------------------------------
+cd..
+dotnet new webapi --name firstAPI
+cd firstAPI
+dotnet build
+dotnet run
+http://localhost:89890/swagger
+
+Next is : open the app with VS Code, use terminal, make changes and test again
+Start using VS 2022
+----------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
+
+
+
+
+

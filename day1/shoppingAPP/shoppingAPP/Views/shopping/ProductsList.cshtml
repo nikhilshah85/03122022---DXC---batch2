@@ -1,0 +1,53 @@
+﻿
+
+
+
+<h2> Top Selling Products </h2>
+
+@*<p> Products List Coming Soon</p>*@
+
+<p> Seller : @ViewBag.seller </p>
+<h1> Total Products : @ViewBag.totalProducts</h1>
+<h3> Total Categories : @ViewBag.totalCategories </h3>
+@*
+<ul>
+    @foreach (var item in ViewBag.pCategories)
+    {
+        <li> @item </li>
+    }
+</ul>*@
+
+<select>
+    @foreach (var item in ViewBag.pCategories)
+    {
+        <option> @item </option>
+    }
+</select>
+
+@foreach (var item in ViewBag.pCategories)
+{
+    <span>
+        @item <input type="checkbox"/>
+    </span>
+}
+
+<table class="table table-striped">
+    @foreach (var item in ViewBag.productList)
+    {
+        <tr>
+            <td> @item.pId </td>
+
+            <td> @item.pName </td>
+
+            <td> @item.pCategory </td>
+
+            <td> @item.pPrice </td>
+
+            <td><input type="checkbox" checked ="@item.pIsInStock"/> </td>
+        </tr>
+    }
+</table>
+
+
+
+
