@@ -1,0 +1,12 @@
+Client Side validation 
+	Javascript - functions to validate 
+	if this script is present, client side validation will happen.
+		if no error, a token of valid data is sent to server, send the data to server
+		
+	IF JAVASCRIPT IS DISABLED, DATA WILL BE SEND TO SERVER WITHOUT VALIDATION
+	if no Javascript is writter, data will still go to server
+
+Server side
+	C# - methods
+	if validataion code is present, validation will happen and response goes to client with error message
+	if validation code is not present, data will be for forwarded to SQL Server, and server will give error message to webserver, and webserver will return to client with error message

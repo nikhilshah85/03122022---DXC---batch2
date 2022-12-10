@@ -1,0 +1,35 @@
+﻿
+
+<script>
+    function getproductsdata()
+    {
+
+        fetch('https://localhost:7006/api/Products').then(dataformat => dataformat.json())
+                                                    .then(result =>{
+                                                       // alert('Success');
+                                                      // console.log(result);
+
+                                                      for(var i=0;i<result.length;i++)
+                                                      {
+                                                        $("table").append("<tr>" + 
+                                                            "<td>" + result[i].pId + "</td>" +
+                        "<td>" + result[i].pName + "</td>" +
+                                                            "<td>" + result[i].pCategory + "</td>" +
+                                                            "<td>" + result[i].pIsInStock + "</td>" +
+                        "<td>" + result[i].pPrice + "</td>" +
+
+                                                        
+                                                        + "</tr>")
+                                                      }
+
+                                                  })
+                                        .catch(err => {
+                                            alert('Error');
+                                        })
+
+    }
+</script>
+
+<button onclick="getproductsdata()" class="btn btn-primary"> Get Products</button>
+
+<table class="table table-striped"></table>

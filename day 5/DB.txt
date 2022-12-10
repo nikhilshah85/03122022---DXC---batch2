@@ -1,0 +1,56 @@
+1. difference between Scaffold-DbContext and Add-Migration and Update-database
+2. How to add new tables as model from database
+
+
+----------------------------------------------------------------------------------------------------
+difference between Scaffold-DbContext and Add-Migration and Update-database
+
+
+		EF Core - has 2 ways to work
+			      2 technique
+			      2 approach
+
+			a. Database first approach 
+			here u design dataase first, add tables, constraints, data etc.
+			and create your models based on it
+				for this we use commands -- Scaffold-DbContext
+
+			u can fire the same command again 
+	Scaffold-DbContext "connection string" -OutputDir -Provider
+
+	----------------
+		Code First Approach - here model is craeted first, code is written for CRUD operations
+
+		u fire Add-Migration and update-database, which will create the database for you and 
+		also tables with columns and constraints
+
+---------------------------------------------------------------------------------------------------
+
+		1. Database first approach -
+			when application is Db Centeric
+	
+		2. Code first approach -
+			when you want to store only the database
+			when app is more front end centeric 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

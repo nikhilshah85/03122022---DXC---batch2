@@ -1,0 +1,54 @@
+1. WebAPI - is similar to MVC, without view,
+	This is all about data
+
+In a new project you get a default controller - weather forecast
+all the data is accesedd from controller by clients
+
+2. You need tools to test your webapi 
+	1. PostMan (Very famous, third party, highest use accross the world, 
+				This is an app by Indian team)
+	2. Fiddler - old tool
+This softwares needs to be downloaded and installed 
+	Till version 3.5
+
+	.net core comes with another tool, which is web based and pre-configered
+		Swagger
+3. REST - Representational State Transfer
+
+
+4. How to differential between MVC controller and API controller
+	- MVC Controller Derives from Controller class
+	- API Controller Derives from ControllerBase Class
+
+	- MVC Controller action must return a view
+	- API Controller action returns a HttpResponse StatusCode and Message/Exception
+
+
+
+A developer - has to know 2 things with WebAPI
+		a. Create a WebAPI
+		b. Consume the WebAPI
+			From client Side (View) - Javascript FetchAPI - standard api built into browser
+				This is fastst and lightweigh - not so safe/secure for critical data
+			From Server Side (Model) - HttpClient - standard api to call from server
+				This is the safest - a bit slow
+
+		c. CORS - Cross Origin Resource Shareing
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

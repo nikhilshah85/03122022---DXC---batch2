@@ -1,0 +1,48 @@
+1. Create a new MVC app with Individual Account - Authentication Type
+2. Check the dependencies folder
+3. Change the connection string in appsetting.json
+4. create a new controller, with some method, needing user identity
+5. Add views for the same
+6. Update the layout page
+7. Authorize attribute on important methods
+8. Test the app
+9. From Nuget manager tools -
+	Add-Migration somename(initialAuthSetup)
+	Update-database
+10. check the database tables, many tables would be created
+11. run the site again, register new user, check the table AspNetUser
+12. Login and browse, check user profile
+
+--------------------------------------------------------------------------
+			oAuth - Integrate FB and google login
+13. Add Nuget Packages - 
+	Microsoft.AspNetCore.Authentication.Facebook
+14. Add FB Middleware in program.cs
+	
+builder.Services.AddAuthentication().AddFacebook(fb =>
+{
+    fb.AppId = "04574387589437589343";
+    fb.AppSecret = "fjlskdjfhguih5uhpjighpnergrghr;ghoerge";
+});
+
+15. Add Google
+	Microsoft.AspNetCore.Authentication.Google
+16. Add middleware accordingly
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
