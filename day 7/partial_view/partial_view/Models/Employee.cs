@@ -13,13 +13,21 @@
             new Employee(){ eId=101, eName="Nikhil", eDesigantion="Sales", eIsPermenant=true, eSalary=2000},
             new Employee(){ eId=102, eName="Rahul", eDesigantion="HR", eIsPermenant=true, eSalary=2000},
             new Employee(){ eId=103, eName="Karan", eDesigantion="Sales", eIsPermenant=false, eSalary=2000},
-            new Employee(){ eId=104, eName="Sohail", eDesigantion="HR", eIsPermenant=true, eSalary=2000}
+            new Employee(){ eId=104, eName="Sohail", eDesigantion="HR", eIsPermenant=true, eSalary=2000},
+             new Employee(){ eId=105, eName="Tanvi", eDesigantion="Sales", eIsPermenant=false, eSalary=2000},
+            new Employee(){ eId=106, eName="Manish", eDesigantion="Sales", eIsPermenant=true, eSalary=2000}
         };
 
 
         public List<Employee> GetEmpList()
         {
             return eList;
+        }
+
+        public List<Employee> GetPermenatEmployee() 
+        {
+            var e = eList.FindAll(em => em.eIsPermenant == true);
+            return e;
         }
 
         public string AddEmployee(Employee newEmp)

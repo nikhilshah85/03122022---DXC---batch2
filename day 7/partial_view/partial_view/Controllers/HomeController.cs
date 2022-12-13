@@ -21,7 +21,7 @@ namespace partial_view.Controllers
         Employee empObj = new Employee();
         public IActionResult Privacy()
         {
-            ViewBag.empList = empObj.GetEmpList();
+            ViewBag.empList = empObj.GetPermenatEmployee();
             return View();
         }
 
