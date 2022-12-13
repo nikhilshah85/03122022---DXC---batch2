@@ -1,0 +1,40 @@
+﻿
+
+
+
+<h1> Product Details </h1>
+
+
+
+
+
+
+@*@Html.ActionLink("Display Employees","ShowEmployee","Employee",new { postId = @item.id })*@
+
+@foreach (var item in ViewBag.products)
+{
+   
+
+    if (item.PIsInStock)
+    {
+        <div style="border:double;background-color:lime">
+            <h3> Product id :     @item.PId  </h3>
+            <h3> Product Name :    @item.PName </h3>
+            <h3> Product Category : @item.PCategory</h3>
+            <h3> Product Price  :  @item.PPrice </h3>
+            <h3> Product Is In Stock : @item.PIsInStock </h3>
+            <hr />
+        </div>
+    }
+    else
+    {
+        <div style="border:double;background-color:red;color:white">
+            <h3> Product id :     @item.PId  </h3>
+            <h3> Product Name :    @item.PName </h3>
+            <h3> Product Category : @item.PCategory</h3>
+            <h3> Product Price  :  @item.PPrice </h3>
+            <h3> Product Is In Stock : @item.PIsInStock </h3>
+            <hr/>
+        </div>
+    }
+}

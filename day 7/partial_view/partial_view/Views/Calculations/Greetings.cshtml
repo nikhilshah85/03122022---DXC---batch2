@@ -1,0 +1,38 @@
+﻿
+
+<h1 style="text-align:center"> Welcome to My App</h1>
+
+
+<form method="post">
+    <input type="text" placeholder="Enter Your Name" name="guestName" class="form-control" />
+<button class="btn btn-primary" > Greet me</button>
+    <button asp-action="test">Test </button>
+
+</form>
+
+
+<form method="post" action="GreetingsPartTwo">
+    <input type="text" placeholder="Enter First Name" name="firstName" />
+    <input type="text" placeholder="Enter Last Name" name="lastName" />
+    <button class="btn btn-warning"> Greet Two </button>
+
+</form>
+
+<h1>@ViewBag.greetMessage</h1>
+<h1> @ViewBag.fullNameGreet </h1>
+
+
+@Html.Partial("~/Views/Shared/partialPages/_Calculator.cshtml")
+
+
+
+
+
+
+
+
+
+
+
+
+

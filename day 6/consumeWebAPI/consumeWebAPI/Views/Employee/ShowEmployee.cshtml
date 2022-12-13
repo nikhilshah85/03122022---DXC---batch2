@@ -1,0 +1,36 @@
+﻿
+
+<script>
+    function searchEmployee()
+    {
+        var empNo = $("#txtEmpNo").val();
+        var url = "https://localhost:7006/api/Employee/elist/id/" + empNo;
+
+        fetch(url,).then(format => format.json())
+                  .then(result =>{
+
+                        $("#divResult").clear();
+                $("#divResult").append("<h1> Employee Id : " + result.eId+ "</h1>" +
+                    "<h1> Employee Id : " + result.eId + "</h1>" +
+                    "<h1> Employee Name : " + result.eName + "</h1>" +
+                    "<h1> Employee Designation : " + result.eDesignation + "</h1>" +
+                    "<h1> Employee sal : " + result.eSalary + "</h1>" +
+                    "<h1> Employee Is Permenant : " + result.eIsPermenant + "</h1>" +
+                    "<h1> Employee Email : " + result.eEmail + "</h1>" 
+                )
+                  })
+                  .catch(err=>{
+                      console.log(err);
+                $("#divError").append("<h1>" + err + "</h1>")
+                
+                  })
+
+    }
+</script>
+
+<input type="number" placeholder="Enter Employee Number" id="txtEmpNo" />
+<button class="btn btn-info" onclick="searchEmployee()">Search</button>
+<div id="divResult" style="background-color:lime"></div>
+<div id="divError" style="color:red">
+
+</div>

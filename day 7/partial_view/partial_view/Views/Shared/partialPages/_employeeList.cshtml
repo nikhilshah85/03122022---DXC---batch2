@@ -1,0 +1,19 @@
+﻿
+
+
+<div style="background-color:purple;color:white">
+<h1> List of Employee Displayed from View Bag</h1>
+
+<table class="table table-stripped" style="color:aqua">
+    @foreach (var item in ViewBag.empList)
+    {
+        <tr>
+            <td> @item.eId </td>
+            <td> @item.eName </td>
+            <td> @item.eDesigantion </td>
+            <td> @item.eSalary </td>
+            <td> @item.eIsPermenant </td>
+        </tr>
+    }
+</table>
+</div>

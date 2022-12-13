@@ -1,0 +1,32 @@
+﻿
+
+
+
+
+<script>
+    function calculteIntrest()
+    {
+        var p= $("#txtP").val();
+        var r = $("#txtROI").val();
+        var y= $("#txtY").val();
+
+        var intrst = ((p * r) / 100) * y ;
+        var monthly = intrst / (y / 12)
+        $("#displayIntrest").text("Total Intrest Payable : " + intrst);
+        $("#displayMonthly").text("Monthy Intrest : " + monthly);
+
+    }
+</script>
+
+<h3> Simple Intrest Calcultor</h3>
+
+
+<div style="background-color:tomato;width:250">
+<input type="number" placeholder="Enter Principal Amount" id="txtP" />
+<input type="number" placeholder="Enter ROI" id="txtROI" />
+<input type="number" placeholder="Enter Year" id="txtY" />
+
+<h4 id="displayIntrest">  </h4>
+<h4 id="displayMonthly"></h4>
+    <button class="btn btn-info" onclick="calculteIntrest()"> Intrest </button>
+</div>

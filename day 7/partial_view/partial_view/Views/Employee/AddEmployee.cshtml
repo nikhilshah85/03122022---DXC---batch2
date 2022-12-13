@@ -1,0 +1,24 @@
+﻿
+
+<h1> Add new Employee</h1>
+
+
+
+@Html.Partial("~/Views/Shared/partialPages/_Calculator.cshtml")
+
+
+<form method="post">
+    <input type="number" placeholder="Enter New Employee Number " class="form-control" name="newEmp.eId" />
+    <input type="text" placeholder="Enter New Employee Name " class="form-control" name="newEmp.eName" />
+    <select class="form-control" name="newEmp.eDesigantion">
+        <option>HR</option>
+        <option>Sales</option>
+        <option>Accounts</option>
+    </select>
+    <input type="number" placeholder="Enter New Employee Salary " class="form-control" name="newEmp.eSalary" />
+    <input type="text" placeholder="Enter New Employee is Permenant (true) / (false) " class="form-control" name="newEmp.eIsPermenant" />
+
+    <button class="btn btn-warning">Add Employee</button>
+</form>
+
+<h1>   @ViewBag.result</h1>
