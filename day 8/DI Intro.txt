@@ -1,0 +1,36 @@
+1. DI - dependency injection - this is by default a part of .net core
+	based on IOC pattern 
+
+
+	this is all about objects
+
+	a. as a developer we create a lot of objects, but never wrote code to destroy them
+		cox GC will come and clear the objects for us
+
+
+	Instead, we as a developer, should not create any object, let framework/runtime create the same for us
+	runtime will destroy the object for us, as per our configuration 
+
+
+	b. We also need to share the object amoung users, request and response
+
+		a. Create new Object per call, destroy the object after process response on server
+			Transcient (useful when data is very dynamic) - demand based			
+
+		b. Create a new object for every user, destroy object when user is gone
+			Scoped (Banking app) - personal/private object for every user on server
+
+		c. Create a global object, object to shared with everyone, destroy obj when server stops
+			SingleTon (Shared object for all the users) - public
+
+
+
+	
+
+
+
+	
+
+
+
+

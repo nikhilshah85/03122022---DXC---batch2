@@ -1,0 +1,23 @@
+﻿
+
+
+<form method="post">
+    <input type="number" placeholder="Enter Employee Number" name="empNo" class="form-control" />
+    <button class="btn btn-danger"> Search Employee</button>
+</form>
+
+
+
+@if (ViewBag.hasData)
+{
+
+<h1> @ViewBag.empDetails.eId</h1>
+
+<h1> @ViewBag.empDetails.eName</h1>
+
+<h1> @ViewBag.empDetails.eDesigantion</h1>
+
+<h1> @ViewBag.empDetails.eIsPermenant</h1>
+
+<h1> @ViewBag.empDetails.eSalary</h1>
+}

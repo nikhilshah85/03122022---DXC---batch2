@@ -1,0 +1,27 @@
+﻿
+<select name="empDesignation">
+    <option>HR</option>
+    <option>Sales</option>
+    <option>Accounts</option>
+    <option>Developer</option>
+</select>
+
+
+@if (ViewBag.hasData)
+{
+    
+
+
+<table>
+    @foreach (var item in ViewBag.empDetails)
+    {
+        <tr>
+            <td> @item.eId </td>
+            <td> @item.eName </td>
+            <td> @item.eDesigantion </td>
+            <td> @item.eIsPermenant </td>
+            <td> @item.eSalary </td>
+        </tr>
+    }
+</table>
+}

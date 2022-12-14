@@ -1,0 +1,15 @@
+﻿
+
+
+<table>
+    @foreach (var item in ViewBag.eList)
+    {
+        <tr>
+            <td> @item.eId </td>
+            <td> @item.eName </td>
+            <td> @item.eDesigantion </td>
+            <td> @item.eIsPermenant </td>
+            <td> @item.eSalary </td>
+        </tr>
+    }
+</table>
