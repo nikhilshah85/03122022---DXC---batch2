@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "firstmicroservicemvc/1.0.0": {
+        "runtime": {
+          "firstmicroservicemvc.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "firstmicroservicemvc/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

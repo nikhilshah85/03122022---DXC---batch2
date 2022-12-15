@@ -1,0 +1,41 @@
+1. docker --version
+2. docker images (show me the list of applications on this machine)
+3. docker pull sanjaysaini2000/angular-app
+4. docker run -d -p 7070:80 sanjaysaini2000/angular-app
+	test the app on browser http://localhost:7070
+5. dotnet new mvc --name firstmicroserviceapp
+6. cd firstmicroserviceapp
+7. dotnet build
+8. code . - this will open the app in vs code
+9. to deploy this to dockerhub, you need to add a .dockerfile to the same with some config
+10. docker build . -t firstmicroservicemvc
+	This will give me an Docker image
+	What is a Image - a complete application along with dependencies
+11. docker images - see your image
+12. docker run -d -p 5656:80  firstmicroservicemvc
+13. create your docker id
+14. docker login (it will open a browser window, pass userid and password)
+15. tag your local image to your docker id
+	docker tag firstmicroservicemvc nikhilshahdocker/firstmicroservice_mvc:batch2
+16. docker push nikhilshahdocker/firstmicroservice_mvc:batch2
+	check the image is now on docker hub
+	everyone in this world will be able to pull it(download it) and run it
+
+17. Others : friends and clients
+	docker pull nikhilshahdocker/firstmicroservice_mvc
+
+
+
+----------------------------------------------------------
+
+Task : 1. Create a ASP.net WebAPI app 
+       2. Add a model restaurantes - with properties
+				rId, rName, rLocation, rStars, rContact, rEmail
+			add a static list with default 5 restaurants
+			have a method which will return all the restaurants
+	3. add a controller, have a route which will display the restaurants in json
+
+	4. add a docker file, built the app into an image
+	5. run it locally in a container, test it
+	6. tag the same to your dockerid
+	7. push the image, and share the same with me and others

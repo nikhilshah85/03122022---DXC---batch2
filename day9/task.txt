@@ -1,0 +1,14 @@
+
+
+Task : 1. Create a ASP.net WebAPI app 
+       2. Add a model restaurantes - with properties
+				rId, rName, rLocation, rStars, rContact, rEmail
+			add a static list with default 5 restaurants
+			have a method which will return all the restaurants
+	3. add a controller, have a route which will display the restaurants in json
+
+	4. add a docker file, built the app into an image
+	5. run it locally in a container, test it
+	6. tag the same to your dockerid
+	7. push the image, and share the same with me and others
+	
